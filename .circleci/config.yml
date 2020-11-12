@@ -1,4 +1,4 @@
-# testing using CircleCI orb1
+# testing using CircleCI orb
 # see https://on.cypress.io/circleci-orb
 
 # for non-orb configuration see old commit
