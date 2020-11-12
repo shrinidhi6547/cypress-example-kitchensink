@@ -6,12 +6,12 @@
 
 # to use CircleCI orbs need to use version >= 2.1
 version: 2.1
-orbs:
-  # use Cypress orb from CircleCI registry
-  cypress: cypress-io/cypress@1.16.1
-  # for testing on Windows
-  # https://circleci.com/docs/2.0/hello-world-windows/
-  win: circleci/windows@1
+# orbs:
+#   # use Cypress orb from CircleCI registry
+#   cypress: cypress-io/cypress@1.16.1
+#   # for testing on Windows
+#   # https://circleci.com/docs/2.0/hello-world-windows/
+#   win: circleci/windows@1
 
 executors:
   mac:
