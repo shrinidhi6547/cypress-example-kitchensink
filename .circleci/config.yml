@@ -51,7 +51,7 @@ jobs:
 
       - run:
           name: 'Run Cypress tests'
-          command: npm run e2e:record -- --env circle=true
+          command:  npm run e2e:record -- --key 83d201fa-00cb-4696-8d3a-603a692d6705 --env circle=true
           no_output_timeout: '1m'
       - store_artifacts:
           path: cypress\screenshots
