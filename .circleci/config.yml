@@ -109,6 +109,7 @@ workflows:
             - run: npx cypress cache path
             - run: npx cypress cache list
             - run: npx cypress info
+            - run: npx cypress run
 
       # runs on 3 machines, load balances tests
       # and records on Cypress Dashboard
@@ -129,6 +130,7 @@ workflows:
       # run on 2 machines using Chrome browser
       - cypress/run:
           name: '2 machines using Chrome'
+          command: npm run e2e:record -- --key 83d201fa-00cb-4696-8d3a-603a692d6705 --env circle=true
           # job will use workspace with code and dependencies
           # installed by the "install" job
           requires:
