@@ -83,6 +83,7 @@ workflows:
             - run: npx cypress cache path
             - run: npx cypress cache list
             - run: npx cypress info
+            - run: npx cypress run
 
       - cypress/run:
           name: Mac test
