@@ -48,6 +48,10 @@ jobs:
           name: 'Start server'
           command: npm run start:ci:windows
           background: true
+          parallel: true
+          parallelism: 2
+          start: 'npm run start:ci'
+          group: 'win Build'
 
       - run:
           name: 'Run Cypress tests'
